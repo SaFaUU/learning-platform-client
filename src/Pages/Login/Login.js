@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 import { FaGoogle, FaGithub } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
 
 const Login = () => {
-    const { googleSignIn, githubSignIn } = useContext(AuthContext)
+    const { googleSignIn, githubSignIn, signIn } = useContext(AuthContext)
     const handleGoogleSignIn = () => {
         googleSignIn()
             .then(result => {
@@ -25,6 +25,24 @@ const Login = () => {
                 console.error(err);
             })
     }
+    const navigate = useNavigate()
+    const handleLogin = (event) => {
+        event.preventDefault();
+        const form = event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+        console.log(email, password)
+        signIn(email, password)
+            .then((result) => {
+                const user = result.user;
+                console.log(user)
+                navigate('/')
+
+            })
+            .catch((error) => {
+                console.error(error)
+            });
+    }
 
     return (
         <div className="hero min-h-screen bg-base-200">
@@ -35,18 +53,18 @@ const Login = () => {
                 </div>
                 <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                     <div className="card-body">
-                        <form>
+                        <form onSubmit={handleLogin}>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>
                                 </label>
-                                <input type="email" placeholder="email" className="input input-bordered" />
+                                <input name='email' type="email" placeholder="email" className="input input-bordered" />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input type="password" placeholder="password" className="input input-bordered" />
+                                <input name='password' type="password" placeholder="password" className="input input-bordered" />
                                 <label className="label">
                                     <Link to='/register' className="label-text-alt link link-hover">Dont have an account?</Link>
                                 </label>

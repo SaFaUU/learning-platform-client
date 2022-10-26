@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
+import { HiUser } from "react-icons/hi";
 
 const Header = () => {
     const { user, logOut } = useContext(AuthContext)
@@ -37,7 +38,12 @@ const Header = () => {
                             <div className="dropdown dropdown-end">
                                 <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                                     <div className="w-14 rounded-full">
-                                        <img src={user?.photoURL} alt='Profile' />
+                                        {
+                                            user?.photoURL ?
+                                                <img src={user.photoURL} alt='Profile' />
+                                                :
+                                                <HiUser className='text-5xl w-25'></HiUser>
+                                        }
                                     </div>
                                 </label>
                                 <ul tabIndex={0} className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
@@ -54,21 +60,18 @@ const Header = () => {
                         </div>
                         :
                         <div className='mr-4 font-sans text-gray-800'>
-                            <button className="btn btn-ghost normal-case p-2 rounded-box w-20 px-1 py-2 rounded-md text-lg font-bold">
+                            <button className="btn btn-ghost normal-case p-2 rounded-box w-20 px-1 py-2 text-lg font-bold">
                                 <Link to='/login'>Login</Link>
 
                             </button>
-                            <button className="btn btn-ghost normal-case p-2 rounded-box w-20 px-1 py-2 rounded-md text-lg font-bold">
+                            <button className="btn btn-ghost normal-case p-2 rounded-box w-20 px-1 py-2 text-lg font-bold">
                                 <Link to='/register'>Register</Link>
 
                             </button>
                         </div>
                     }
-
-
+                    <input type="checkbox" className="toggle ml-4" />
                 </div>
-
-
             </div>
         </div>
     );
