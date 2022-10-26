@@ -1,0 +1,9 @@
+1. Learning related website
+2. Themeforest theke idea niye kora uchit
+3. website title e shundor name
+4. navbar e logo thakbe
+5. dark theme light theme toggle button thakte hobe kaj na koraite parle shomossha nai
+6. task description er 3 number point 
+7. mouse dp er nile tooltip e name dekhabe 
+8. readme.md file client side er jonno must
+9. 
