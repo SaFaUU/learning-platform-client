@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 const CourseSideBar = (props) => {
     // console.log(props)
     // const data = useLoaderData();
-    const { title, info, img_url, id } = props.selected;
     const { courses } = props;
     return (
         <div className='sticky top-24 mb-16 w-5/6 lg:block hidden justify-center mx-auto mt-16 pt-5 bg-sky-100 px-4 rounded-lg h-1/3'>

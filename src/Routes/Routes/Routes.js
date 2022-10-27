@@ -1,8 +1,6 @@
 import React from 'react';
 import {
     createBrowserRouter,
-    RouterProvider,
-    Route,
 } from "react-router-dom";
 import Main from '../../layout/Main';
 import Blog from '../../Pages/Blog/Blog';
@@ -29,7 +27,7 @@ export const router = createBrowserRouter([
             {
                 path: '/courses',
                 loader: () => {
-                    return fetch('http://localhost:5000/courses')
+                    return fetch('https://learning-platform-server-safauu.vercel.app/courses')
                 },
                 element: <Courses></Courses>
             },
@@ -52,14 +50,14 @@ export const router = createBrowserRouter([
             {
                 path: '/courses/:courseId',
                 loader: ({ params }) => {
-                    return fetch(`http://localhost:5000/courses/${params.courseId}`)
+                    return fetch(`https://learning-platform-server-safauu.vercel.app/courses/${params.courseId}`)
                 },
                 element: <CourseDetails></CourseDetails>
             },
             {
                 path: '/checkout/:courseId',
                 loader: ({ params }) => {
-                    return fetch(`http://localhost:5000/checkout/${params.courseId}`)
+                    return fetch(`https://learning-platform-server-safauu.vercel.app/checkout/${params.courseId}`)
                 },
                 element: <PrivateRoute><Checkout></Checkout></PrivateRoute>
             },

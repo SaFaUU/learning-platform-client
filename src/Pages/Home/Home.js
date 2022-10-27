@@ -21,13 +21,13 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex flex-col align-middle'>
+            <div className=' align-middle'>
                 <div className="hero bg-base-200 w-auto">
                     <div className="hero-content flex-col lg:flex-row mt-5 justify-around">
-                        <img src="https://img.freepik.com/free-vector/financial-obligation-document-promissory-bill-loan-agreement-debt-return-promise-issuer-payee-signing-contract-businessmen-making-deal_335657-848.jpg?w=740&t=st=1666700216~exp=1666700816~hmac=4b7940b3f769b69d5d99cf5b5e557b89283b6a1d8155a0ffe97bea386bea6ceb" className="max-w-sm rounded-lg shadow-md" />
+                        <img src="https://img.freepik.com/free-vector/financial-obligation-document-promissory-bill-loan-agreement-debt-return-promise-issuer-payee-signing-contract-businessmen-making-deal_335657-848.jpg?w=740&t=st=1666700216~exp=1666700816~hmac=4b7940b3f769b69d5d99cf5b5e557b89283b6a1d8155a0ffe97bea386bea6ceb" className="max-w-md rounded-lg shadow-md" />
                         <div className='w-2/4 border-0'>
                             <h1 className="text-5xl font-bold">Learn Programming!</h1>
-                            <p className="py-6 mx-0 w-3/4">With our comprehensive tutors and tutorial you will be on your way to become the best Progammer there is.</p>
+                            <p className="py-6 mx-0 w-3/4 sm:mx-auto">With our comprehensive tutors and tutorial you will be on your way to become the best Progammer there is.</p>
                             <Link className="btn btn-primary bg-blue-600" to='/courses'>
                                 <button>Browse Courses</button>
                             </Link>
@@ -35,13 +35,13 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="hero bg-base-200 w-auto pl-0">
-                    <div className="hero-content flex-col lg:flex-row mt-5 justify-around">
+                    <div className="hero-content flex-col lg:flex-row flex-col-reverse mt-5 justify-around">
                         <div className='w-2/4'>
                             <h1 className="text-5xl font-bold">Get Productive</h1>
-                            <p className="py-6 mx-0 w-3/4">With our comprehensive tutors and tutorial you will be on your way to become the best Progammer there is.</p>
-                            <button className="btn btn-primary bg-blue-600">Get Started</button>
+                            <p className="py-6 mx-0 w-3/4  sm:mx-auto">With our comprehensive tutors and tutorial you will be on your way to become the best Progammer there is.</p>
+                            <Link to='blog'><button className="btn btn-primary bg-blue-600">Visit Blog Site</button></Link>
                         </div>
-                        <img src="https://img.freepik.com/free-vector/unemployment-insurance-abstract-concept-vector-illustration-unemployment-benefits-lost-job-tired-stressed-businessman-claim-form-workers-compensation-paper-work-interview-abstract-metaphor_335657-1355.jpg?w=740&t=st=1666700202~exp=1666700802~hmac=e352cbbabda5e1bbe5aba9534d0ae630478413cbc086ac139f0a8d2858744ec4" className="max-w-sm rounded-lg shadow-md" />
+                        <img src="https://img.freepik.com/free-vector/unemployment-insurance-abstract-concept-vector-illustration-unemployment-benefits-lost-job-tired-stressed-businessman-claim-form-workers-compensation-paper-work-interview-abstract-metaphor_335657-1355.jpg?w=740&t=st=1666700202~exp=1666700802~hmac=e352cbbabda5e1bbe5aba9534d0ae630478413cbc086ac139f0a8d2858744ec4" className="max-w-md rounded-lg shadow-md" />
 
                     </div>
                 </div>
