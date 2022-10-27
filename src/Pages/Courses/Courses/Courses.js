@@ -8,7 +8,7 @@ const Courses = () => {
     const [selected, setSelected] = useState({});
     const handleSelect = (event) => {
         event.target.style.background = 'red';
-        console.log(event);
+        // console.log(event);
         setSelected(selected);
     }
     return (
@@ -36,10 +36,11 @@ const Courses = () => {
             </div>
             <div className='w-1/5 px-0 lg:block hidden'>
                 <CourseSideBar
+                    courses={courses}
                     selected={selected}
                 ></CourseSideBar>
             </div>
-        </div >
+        </div>
     );
 };
 
