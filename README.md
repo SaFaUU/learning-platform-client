@@ -1,10 +1,10 @@
 # ASCII Educational Website
 ASCII web app is an assignment for the Programming Hero Web Development Course.
 
-##Live Website Link: ##
+Markup : ##Live Website Link: ##
 https://learning-platform-79b53.web.app
 
-##Technology used:##
+Markup : ##Technology used:##
 *React
 *Firebase
 *Tailwind
@@ -13,8 +13,8 @@ https://learning-platform-79b53.web.app
 *React Icons
 *Daisy UI
 
-##Features and Functionality
- Markup :  *Authentication with Google
+Markup : ## Features and Functionality ##
+Markup :  *Authentication with Google
            *Authentication with Github
            *Authentication with Email & Password
            *Registration
