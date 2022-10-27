@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -12,7 +13,9 @@ const Home = () => {
                             <p className="mb-3">JS has become one of the most powerful programming languages and with widespread usage of internet, it everyday serves billions of people's worldwide.This is the best website you can visit to get all your favourite courses from the best all in one place</p>
                             <div className='flex justify-center'>
                                 <button className="btn bg-blue-600 btn-md mr-4">Explore Courses</button>
-                                <button className="btn bg-blue-600 btn-md">Visit Our Blogs</button>
+                                <Link className="btn bg-blue-600 btn-md" to='/blog'>
+                                    <button>Visit Our Blogs</button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -25,7 +28,9 @@ const Home = () => {
                         <div className='w-2/4 border-0'>
                             <h1 className="text-5xl font-bold">Learn Programming!</h1>
                             <p className="py-6 mx-0 w-3/4">With our comprehensive tutors and tutorial you will be on your way to become the best Progammer there is.</p>
-                            <button className="btn btn-primary bg-blue-600">Browse Courses</button>
+                            <Link className="btn btn-primary bg-blue-600" to='/courses'>
+                                <button>Browse Courses</button>
+                            </Link>
                         </div>
                     </div>
                 </div>

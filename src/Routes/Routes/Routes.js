@@ -9,6 +9,7 @@ import Blog from '../../Pages/Blog/Blog';
 import Checkout from '../../Pages/Checkout/Checkout';
 import CourseDetails from '../../Pages/Courses/CourseDetails/CourseDetails';
 import Courses from '../../Pages/Courses/Courses/Courses';
+import ErrorPage from '../../Pages/ErrorPage/ErrorPage';
 import Faq from '../../Pages/Faq/Faq';
 import Home from '../../Pages/Home/Home';
 import Login from '../../Pages/Login/Login';
@@ -19,6 +20,7 @@ export const router = createBrowserRouter([
     {
         path: '/',
         element: <Main></Main>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/',
