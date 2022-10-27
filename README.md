@@ -4,7 +4,7 @@ ASCII web app is an assignment for the Programming Hero Web Development Course.
 ## Live Website Link:
 https://learning-platform-79b53.web.app
 
-##Technology used:##
+## Technology used:
 * React
 * Firebase
 * Tailwind
