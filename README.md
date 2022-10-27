@@ -14,12 +14,13 @@ https://learning-platform-79b53.web.app
 *Daisy UI
 
 ##Features and Functionality
-*Authentication with Google
-*Authentication with Github
-*Authentication with Email & Password
-*Registration
-*Checkout Page Secured with Private Route
-*Beautiful Animated UI Transition
-*Avatar Display
-*PDF Download of the Web Page
-*Blog Page
+ Markup : 
+  *Authentication with Google
+  *Authentication with Github
+  *Authentication with Email & Password
+  *Registration
+  *Checkout Page Secured with Private Route
+  *Beautiful Animated UI Transition
+  *Avatar Display
+  *PDF Download of the Web Page
+  *Blog Page
